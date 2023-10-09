@@ -9,7 +9,7 @@ This is built in the same spirit as the more mature [version in R](https://githu
   2. Flatten the matrix and rank features based on absolute correlations ([`flatten_mat`](https://github.com/pdwaggoner/hdImpute_py/blob/main/code/flatten_mat.py))
   3. Impute batches of features based on correlation structure, of sizes determined by the user ([`impute_batches`](https://github.com/pdwaggoner/hdImpute_py/blob/main/code/impute_batches.py))
 
-The current approach differs from the R approach in the following ways (though continued development will address these and others issues in time):
+The current approach differs from the R approach in the following ways (though continued development will address these and other issues in time):
 
   - Only numeric features are supported. The algorithm will skip over any non-numeric features (e.g., strings, dates, times, etc.). These columns are appended after the final stage to return a data matrix of the same dimensions as the input data frame.
   - Instead of chained random forests, a similar algorithm in the same spirit from `fancyimpute` is used. Namely, the imputation engine under the hood is `IterativeImputer`, which is now mainly supported in `scikit-learn` but also still in `fancyimpute`. `IterativeImputer` is "a strategy for imputing missing values by modeling each feature with missing values as a function of other features in a round-robin fashion (read more [here](https://scikit-learn.org/stable/modules/generated/sklearn.impute.IterativeImputer.html) or [here](https://pypi.org/project/fancyimpute/))."
