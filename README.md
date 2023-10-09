@@ -1,5 +1,5 @@
 # `hdImpute` in Python
-A python implementation of the batch-based `hdImpute` algorithm for high dimensional missing data problems. 
+*A python implementation of the batch-based `hdImpute` algorithm for high dimensional missing data problems.* 
 
 This is built in the same spirit as the more mature [version in R](https://github.com/pdwaggoner/hdImpute) based on the [recent paper](https://link.springer.com/article/10.1007/s00180-023-01325-9) introducing the hdImpute method for addressing high dimensional missing data problems. There are a few important distinctions, at least in the present version, listed below.
 
