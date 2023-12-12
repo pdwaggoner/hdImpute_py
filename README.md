@@ -56,7 +56,7 @@ imputed_data
 impute_batches(data, flat_out, batch=2, decimal_places=2)
 ```
 
-*Importantly*, users should always remember to closely inspect the data output to ensure missingness is not only dealt with (completed cases), but done so in a reliable and reaosnable way. For more on checking the quality of imputations, take a look at the [`mad()` function](https://github.com/pdwaggoner/hdImpute/blob/main/vignettes/MAD-Evaluation.md) in the R version. Development of a similar function for this python module is forthcoming. 
+*Importantly*, users should always remember to closely inspect the data output to ensure missingness is not only dealt with (completed cases), but done so in a reliable and reasonable way. For more on checking the quality of imputations, take a look at the [`mad()` function](https://github.com/pdwaggoner/hdImpute/blob/main/vignettes/MAD-Evaluation.md) in the R version. Development of a similar function for this python module is forthcoming. 
 
 ## Contribute
 
